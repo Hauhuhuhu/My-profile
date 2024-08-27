@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Cong Hau</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header--inner">
+                <div class="logo">
+                    <a href="#!"><strong class="strong-blue">Hau.</strong></a>
+                </div>
+                <!-- mobile-nav -->
+                <label for="header__nav-toggle" class="header__menu-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 17H19M5 12H19M5 7H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                  
+                </label>
+                <input type="checkbox" id="header__nav-toggle">
+                <label for="header__nav-toggle" class="header__overlay"></label>
+                <nav class="header__nav--mobile">
+                    <div class="logo header__mobile-logo">
+                        <a href="#!"><strong class="strong-blue">Hau.</strong></a>
+                    </div>
+                    <div class="header__nav--mobile-list">
+                        <a href="#" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='#'">Home</label>
+                        </a>
+                        <a href="#info" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='#info'">Info</label>
+                        </a>
+                        <a href="#skills" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='#skills'">Skills</label>
+                        </a>
+                        <a href="#education" class="header__nav--link">
+                            <label for="header__nav-toggle" onclick="window.location.href='#education'">Education</label>
+                        </a>  
+                    </div>
+                    <div class="header__nav--mobile-footer">
+                        <p class="sub-heading">© 2024 - By Nguyen Cong Hau <strong class="heart">&#10084;</strong></p>
+                    </div>
+
+                </nav>
+                <!-- end Mobile-nav -->
+                <nav class="header__nav">
+                    <a href="#" class="header__nav--link">Home</a>
+                    <a href="#info" class="header__nav--link">Info</a>
+                    <a href="#skills" class="header__nav--link">Skills</a>
+                    <a href="#education" class="header__nav--link">Education</a> 
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <!-- Home -->
+            <section id="home" class="home">
+                <div class="row">
+                    <div class="col col-xl-6 col-lg-6 col-sm-12 col-12"> 
+                        <section class="home__content">
+                            <h1 class="heading">Welcome to <strong class="strong-primary">Nguyen&nbsp;Cong&nbsp;Hau's</strong> website.</h1>
+                            <p class="sub-heading">chưa biết viết gì ở đây :(( </p>
+                            <a href="" class="btn">About me</a>
+                        </section>
+                    </div>
+                    <div class="col col-xl-6 col-lg-6 col-sm-12 col-12">
+                        <section class="home__clip">
+                            <div class="box__img"></div>
+                        </section>
+                    </div>
+                    <div class="box__img2"></div>
+                    <figure class="home-icon">
+                        <img src="./assets/icon/Vector.svg" alt="vector">
+                        <img src="./assets/icon/Cone.png" alt="cone">
+                        <img src="./assets/icon/Cylinder2.png" alt="pi">
+                        <img src="./assets/icon/Knot.png" alt="knot" id="info">
+                    </figure>
+                </div>
+            </section>
+            <!-- onTop -->
+            <aside class="onTop"><a href="#" data-aos="fade-up" data-aos-anchor-placement="center-bottom"><img src="./assets/icon/Up.svg" alt="Top"></a></aside>
+            <!-- Info -->
+            <section class="info">
+                <div class="row">
+                    <div class="col col-xl-5 col-sm-12 col-12">
+                        <article class="info__left">
+                            <h2 class="heading">About me</h2>
+                            <p class="sub-heading">I'm Nguyen Cong Hau</p>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non urna vel ipsum scelerisque consectetur. Sed in ex vel risus sagittis pharetra. Sed faucibus lacus vel ligula porttitor, vel fermentum nisi dignissim. Nulla facilisi. Sed vel justo vel felis faucibus vulputate.</p>
+                            <div class="info--media">
+                                <a href="https://www.facebook.com/conghau.vn.1" target="_blank" rel="noopener noreferrer" class="btn-blue">Facebook</a>
+                                <a href="https://www.instagram.com/cong.hau05/" target="_blank" rel="noopener noreferrer" class="btn-2">Instagram</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col offset-xl-1 col-xl-6 col-sm-12 col-12"></div>
+                    <figure class="info-icon">
+                        <img src="./assets/icon/Thorus2.png" alt="Thorus2">
+                        <img src="./assets/icon/Helix.png" alt="Helix">
+                        <img src="./assets/icon/Spheres2.png" alt="Helix" >
+                        <img src="./assets/icon/Spheres1.png" alt="Helix">
+                    </figure>
+                </div>
+            </section>
+            <!-- Skill -->
+            <section id="skills" class="skills">
+                <div class="row">
+                    <div class="col col-xl-6 col-sm-12 col-12">
+                        <article class="skills__left">
+                            <div class="skills--user">
+                                <div class="logo">
+                                    <a href="#!"><strong class="strong-blue">Hau.</strong></a>
+                                </div>
+                            </div>
+                            <span class="skill--item-wrap-1">
+                                <figure class="skill--item">
+                                    <img src="./assets/img/html.png" alt="HTML" class="skill--img">
+                                </figure>
+                                <figure class="skill--item">
+                                    <img src="./assets/img/css.png" alt="HTML" class="skill--img">
+                                </figure>
+                            </span>
+                            <span class="skill--item-wrap-2">
+                                <figure class="skill--item">
+                                    <img src="./assets/img/javascript.png" alt="HTML" class="skill--img skill--img-right">
+                                </figure>
+                                <figure class="skill--item">
+                                    <img src="./assets/img/javascript.png" alt="HTML" class="skill--img skill--img-right">
+                                </figure>
+                            </span>
+                        </article>
+                    </div>
+                    <div class="col col-xl-5 offset-xl-1 col-sm-12 offset-sm-0 col-12">
+                        <article class="skills__right">
+                            <h2 class="heading">Skills</h2>
+                            <p class="sub-heading">What I'm good at</p>
+                            <p class="text">Skill: Html, Css.</p>
+                        </article>
+                    </div>
+                    <figure class="skill-icon">
+                        <img src="./assets/icon/Cylinder1.png" alt="Thorus2">
+                        <img src="./assets/icon/Pyramid1.png" alt="Helix">
+                        <img src="./assets/icon/Pyramid 2.png" alt="Helix">
+                        <img src="./assets/icon/Cube2.png" alt="Cube2">
+                        
+                    </figure>
+                </div>
+            </section>
+            <!-- Education -->
+            <section id="education" class="education">
+                <div class="row">
+                    <div class="col">
+                        <article class="education__content">
+                            <h2 class="heading">Education</h2>
+                            <!-- <p class="sub-heading">University: University of transport and communications</p> -->
+                            <p class="sub-heading strong-blue">Giang hồ hiểm ác nuôi ta lớn</p>
+                            <p class="sub-heading strong-blue">Cuộc đời khốn nạn dạy ta khôn</p>
+                            <p class="sub-heading strong-blue">Không đâm không chém đời không nể </p>
+                            <p class="sub-heading strong-blue">Không tiền không bạc gái không theo</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="sub-heading">© 2024 - By Nguyen Cong Hau <strong class="heart">&#10084;&#10084;&#10084;</strong></p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

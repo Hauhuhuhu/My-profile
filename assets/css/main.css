@@ -1,0 +1,693 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--header-color);
+    box-shadow: 0px 2px 10px rgba(69, 201, 253, 0.3);
+    z-index: 1;
+}
+.header--inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--header-height);
+}
+.logo a {
+    font-size: 3.8rem;
+    font-weight: 800;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.header__nav--link {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 8px 16px; 
+    padding: 4px 0;
+    line-height: 3rem;
+    color: bisque;
+}
+
+.header__nav--link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 99px;
+    background: linear-gradient(90deg, var(--linear-color-1), var(--linear-color-2));
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.header__nav--link:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+/* Home */
+.main {
+    padding-top: var(--header-height);
+}
+.home__content .sub-heading {
+    margin: 30px 0 40px;
+}
+.home__clip {
+    position: relative;
+    padding: 100px;
+    transition: transform ease-in-out 2s, opacity ease-in 0.5s;
+}
+
+.box__img {
+    display: block;
+    margin: auto;
+    background: #fff url(/assets/img/bird-Photoroom.png);
+    height: 166.67px;
+    width: 180px;
+    padding: 50px;
+    border-radius: 999px;
+    animation: bird_animation 1.5s infinite steps(1);
+}
+
+@keyframes bird_animation {
+    0% {
+        background-position: -0px -0px;
+    }
+    7.2% {
+        background-position: -180px -0px;
+    }
+    14.4% {
+        background-position: -360px -0px;
+    }
+    21.6% {
+        background-position: -540px -0px;
+    }
+    28.8% {
+        background-position: -720px -0px;
+    }
+    36% {
+        background-position: -0px -166.67px;
+    }
+    43.2% {
+        background-position: -180px -166.67px;
+    }
+    50.4% {
+        background-position: -360px -166.67px;
+    }
+    57.6% {
+        background-position: -540px -166.67px;
+    }
+    64.8% {
+        background-position: -720px -166.67px;
+    }
+    72% {
+        background-position: -0px -333.34px;
+    }
+    79.2% {
+        background-position: -180px -333.34px;
+    }
+    86.4% {
+        background-position: -360px -333.34px;
+    } 
+    93.6% {
+        background-position: -540px -333.34px;
+    } 
+    100% {
+        background-position: -720px -333.34px;
+    } 
+}
+.box__img2 {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 72px;
+    height: 72px;
+    background: #fff url(/assets/img/sprites-icon.png);
+    border-radius: 99px;
+    animation: icon-sprites 120s infinite steps(1);
+}
+@keyframes icon-sprites {
+    0% {
+        background-position: -0px -0px;
+    }
+    0.625% {
+        background-position: -72px -0px;
+    }
+    1.25% {
+        background-position: -144px -0px;
+    }
+    1.875% {
+        background-position: -216px -0px;
+    }
+    2.5% {
+        background-position: -288px -0px;
+    }
+    3% {
+        background-position: -360px -0px;
+    }
+    3.5% {
+        background-position: -432px -0px;
+    }
+    4% {
+        background-position: -504px -0px;
+    }
+    4.5% {
+        background-position: -576px -0px;
+    }
+    5% {
+        background-position: -648px -0px;
+    }
+    5.5% {
+        background-position: -720px -0px;
+    }
+    6% {
+        background-position: -792px -0px;
+    }
+    6.5% {
+        background-position: -864px -0px;
+    }
+    7% {
+        background-position: -936px -0px;
+    }
+    7.5% {
+        background-position: -1008px -0px;
+    }
+    8% {
+        background-position: -1080px -0px;
+    }
+    8.5% {
+        background-position: -0px -72px;
+    }
+    9% {
+        background-position: -72px -72px;
+    }
+    9.5% {
+        background-position: -144px -72px;
+    }
+    10% {
+        background-position: -216px -72px;
+    }
+    10.5% {
+        background-position: -288px -72px;
+    }
+    11% {
+        background-position: -360px -72px;
+    }
+    11.5% {
+        background-position: -432px -72px;
+    }
+    12% {
+        background-position: -504px -72px;
+    }
+    12.5% {
+        background-position: -576px -72px;
+    }
+    13% {
+        background-position: -648px -72px;
+    }
+    13.5% {
+        background-position: -720px -72px;
+    }
+    14% {
+        background-position: -792px -72px;
+    }
+    14.5% {
+        background-position: -864px -72px;
+    }
+    15% {
+        background-position: -936px -72px;
+    }
+    15.5% {
+        background-position: -1008px -72px;
+    }
+    16% {
+        background-position: -1080px -72px;
+    }
+    16.5% {
+        background-position: -0px -144px;
+    }
+    17% {
+        background-position: -72px -144px;
+    }
+    17.5% {
+        background-position: -144px -144px;
+    }
+    18% {
+        background-position: -216px -144px;
+    }
+    18.5% {
+        background-position: -288px -144px;
+    }
+    19% {
+        background-position: -360px -144px;
+    }
+    19.5% {
+        background-position: -432px -144px;
+    }
+    20% {
+        background-position: -504px -144px;
+    }
+    20.5% {
+        background-position: -576px -144px;
+    }
+    21% {
+        background-position: -648px -144px;
+    }
+    21.5% {
+        background-position: -720px -144px;
+    }
+    22% {
+        background-position: -792px -144px;
+    }
+    22.5% {
+        background-position: -864px -144px;
+    }
+    23% {
+        background-position: -936px -144px;
+    }
+    23.5% {
+        background-position: -1008px -144px;
+    }
+    24% {
+        background-position: -1080px -144px;
+    }
+    24.5% {
+        background-position: -0px -216px;
+    }
+    25% {
+        background-position: -72px -216px;
+    }
+    25.5% {
+        background-position: -144px -216px;
+    }
+    26% {
+        background-position: -216px -216px;
+    }
+    26.5% {
+        background-position: -288px -216px;
+    }
+    27% {
+        background-position: -360px -216px;
+    }
+    27.5% {
+        background-position: -432px -216px;
+    }
+    28% {
+        background-position: -504px -216px;
+    }
+    28.5% {
+        background-position: -576px -216px;
+    }
+    29% {
+        background-position: -648px -216px;
+    }
+    29.5% {
+        background-position: -720px -216px;
+    }
+    30% {
+        background-position: -792px -216px;
+    }
+    30.5% {
+        background-position: -864px -216px;
+    }
+    31% {
+        background-position: -936px -216px;
+    }
+    31.5% {
+        background-position: -1008px -216px;
+    }
+    32% {
+        background-position: -1080px -216px;
+    }
+    32.5% {
+        background-position: -0px -288px;
+    }
+    33% {
+        background-position: -72px -288px;
+    }
+    33.5% {
+        background-position: -144px -288px;
+    }
+    34% {
+        background-position: -216px -288px;
+    }
+    34.5% {
+        background-position: -288px -288px;
+    }
+    35% {
+        background-position: -360px -288px;
+    }
+    35.5% {
+        background-position: -432px -288px;
+    }
+    36% {
+        background-position: -504px -288px;
+    }
+    36.5% {
+        background-position: -576px -288px;
+    }
+    37% {
+        background-position: -648px -288px;
+    }
+    37.5% {
+        background-position: -720px -288px;
+    }
+    38% {
+        background-position: -792px -288px;
+    }
+    38.5% {
+        background-position: -864px -288px;
+    }
+    39% {
+        background-position: -936px -288px;
+    }
+    39.5% {
+        background-position: -1008px -288px;
+    }
+    40% {
+        background-position: -1080px -288px;
+    }
+    40.5% {
+        background-position: -0px -360px;
+    }
+    41% {
+        background-position: -72px -360px;
+    }
+    41.5% {
+        background-position: -144px -360px;
+    }
+    42% {
+        background-position: -216px -360px;
+    }
+    42.5% {
+        background-position: -288px -360px;
+    }
+    43% {
+        background-position: -360px -360px;
+    }
+    43.5% {
+        background-position: -432px -360px;
+    }
+    44% {
+        background-position: -504px -360px;
+    }
+    44.5% {
+        background-position: -576px -360px;
+    }
+    45% {
+        background-position: -648px -360px;
+    }
+    45.5% {
+        background-position: -720px -360px;
+    }
+    46% {
+        background-position: -792px -360px;
+    }
+    46.5% {
+        background-position: -864px -360px;
+    }
+    47% {
+        background-position: -936px -360px;
+    }
+    47.5% {
+        background-position: -1008px -360px;
+    }
+    48% {
+        background-position: -1080px -360px;
+    }
+    48.5% {
+        background-position: -0px -432px;
+    }
+    49% {
+        background-position: -72px -432px;
+    }
+    49.5% {
+        background-position: -144px -432px;
+    }
+    50% {
+        background-position: -216px -432px;
+    }
+    50.5% {
+        background-position: -288px -432px;
+    }
+    51% {
+        background-position: -360px -432px;
+    }
+    51.5% {
+        background-position: -432px -432px;
+    }
+    52% {
+        background-position: -504px -432px;
+    }
+    52.5% {
+        background-position: -576px -432px;
+    }
+    53% {
+        background-position: -648px -432px;
+    }
+    53.5% {
+        background-position: -720px -432px;
+    }
+    54% {
+        background-position: -792px -432px;
+    }
+    54.5% {
+        background-position: -864px -432px;
+    }
+    55% {
+        background-position: -936px -432px;
+    }
+    55.5% {
+        background-position: -1008px -432px;
+    }
+    56% {
+        background-position: -1080px -432px;
+    }
+    56.5% {
+        background-position: -0px -504px;
+    }
+    57% {
+        background-position: -72px -504px;
+    }
+    57.5% {
+        background-position: -144px -504px;
+    }
+    58% {
+        background-position: -216px -504px;
+    }
+    58.5% {
+        background-position: -288px -504px;
+    }
+    59% {
+        background-position: -360px -504px;
+    }
+    59.5% {
+        background-position: -432px -504px;
+    }
+    60% {
+        background-position: -504px -504px;
+    }
+    60.5% {
+        background-position: -576px -504px;
+    }
+    61% {
+        background-position: -648px -504px;
+    }
+    61.5% {
+        background-position: -720px -504px;
+    }
+    62% {
+        background-position: -792px -504px;
+    }
+    62.5% {
+        background-position: -864px -504px;
+    }
+    63% {
+        background-position: -936px -504px;
+    }
+    63.5% {
+        background-position: -1008px -504px;
+    }
+    64% {
+        background-position: -1080px -504px;
+    }
+    64.5% {
+        background-position: -0px -576px;
+    }
+    65% {
+        background-position: -72px -576px;
+    }
+    65.5% {
+        background-position: -144px -576px;
+    }
+    66% {
+        background-position: -216px -576px;
+    }
+    66.5% {
+        background-position: -288px -576px;
+    }
+    67% {
+        background-position: -360px -576px;
+    }
+    67.5% {
+        background-position: -432px -576px;
+    }
+    68% {
+        background-position: -504px -576px;
+    }
+    68.5% {
+        background-position: -576px -576px;
+    }
+    69% {
+        background-position: -648px -576px;
+    }
+    69.5% {
+        background-position: -720px -576px;
+    }
+    70% {
+        background-position: -792px -576px;
+    }
+    70.5% {
+        background-position: -864px -576px;
+    }
+    71% {
+        background-position: -936px -576px;
+    }
+    71.5% {
+        background-position: -1008px -576px;
+    }
+    72% {
+        background-position: -1080px -576px;
+    }
+    72.5% {
+        background-position: -0px -648px;
+    }
+    73% {
+        background-position: -72px -648px;
+    }
+    73.5% {
+        background-position: -144px -648px;
+    }
+    74% {
+        background-position: -216px -648px;
+    }
+    74.5% {
+        background-position: -288px -648px;
+    }
+    75% {
+        background-position: -360px -648px;
+    }
+    75.5% {
+        background-position: -432px -648px;
+    }
+}
+
+/* Info */
+.info {
+    margin-top: -60px;
+    padding-top: 0;
+}
+
+.info__left .text {
+    margin-bottom: 40px;
+}
+.info--media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+
+/* skills */
+.skills__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.skills--user {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 24px;
+    border: 2px solid transparent;
+    box-shadow: -5px -5px 44px rgba(255, 203, 1, 0.2), 5px 5px 44px rgba(255, 89, 147, 0.2);
+    background: -o-linear-gradient(#212121, #212121) padding-box, -o-linear-gradient(308deg, var(--linear-color-1), var(--linear-color-2)) border-box;    
+    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(142deg, var(--linear-color-1), var(--linear-color-2)) border-box;
+}
+.skills__left span {
+    position: absolute;
+    display: block;
+    height: 400px;
+    border: 1.5px dashed #515151;
+    z-index: -1;
+}
+.skills__left span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+.skills__left span:nth-child(3) {
+    transform: rotate(45deg);
+}
+
+.skill--item {
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+}
+.skill--item:nth-child(odd) {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+.skill--item:nth-child(even) {
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+}
+.skill--item-wrap-1 .skill--item:nth-child(1) {
+    background-color: #FF7361;
+    box-shadow: -4px 4px 40px rgba(255, 115, 97, 0.4);
+}
+.skill--item-wrap-1 .skill--item:nth-child(2) {
+    background-color: #00AAFF;
+    box-shadow: -4px 4px 40px rgba(0, 170, 255, 0.4);
+}
+.skill--item-wrap-2 .skill--item:nth-child(1) {
+    background-color: #FFDA50;
+    box-shadow: 0px 4px 40px rgba(255, 218, 80, 0.4);
+}
+.skill--item-wrap-2 .skill--item:nth-child(2) {
+    background-color: #FFDA50;
+    box-shadow: 0px 4px 40px rgba(255, 218, 80, 0.4);
+}
+.skill--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(45deg);
+}
+.skill--img-right {
+    transform: rotate(-45deg);
+    border-radius: 50%;
+}
+/* education */
+
+/* footer */
+.footer {
+    padding: 16px;
+    text-align: center;
+    background-color: #1C1D1E;
+}
+.footer .sub-heading {
+    margin: 0;
+}
+.heart {
+    color: red;
+}

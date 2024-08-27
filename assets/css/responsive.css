@@ -1,0 +1,125 @@
+#header__nav-toggle,
+.header__menu-icon svg,
+.header__nav--mobile {
+    display: none;
+}
+
+
+/* Table and Mobile */
+@media (max-width: 992px) {
+    .onTop,
+    .info-icon img:nth-child(4) {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .container {
+        overflow: hidden;
+        padding: 0 20px;
+    }
+    .home,
+    .info,
+    .skills,
+    .education {
+        padding: 40px 0;
+    }
+    .home-icon img,
+    .info-icon img,
+    .skill-icon img {
+        z-index: -1;
+    }
+    /* nav */
+    .header__menu-icon svg,
+    .header__nav--mobile {
+        display: block;
+    }
+    .header__menu-icon svg {
+        width: 4rem;
+        color: aqua;
+    }
+    #header__nav-toggle {
+        display: none;
+    }
+    #header__nav-toggle:checked ~ .header__overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    #header__nav-toggle:checked ~ .header__nav--mobile {
+       transform: translateX(0);
+    }
+    .header__overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    .header__nav--mobile {
+        position: fixed;
+        inset: 0 0 0 30%;
+        padding: 30px;
+        background-color: var(--header-color);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    .header__mobile-logo {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+    }
+    .header__nav--mobile-list {
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid #000;
+    }
+    .header__nav--link {
+        display: block;
+        margin: 0;
+        font-size: 2rem;
+    }
+    .header__nav--link label {
+        display: block;
+        padding: 10px;
+    }
+    .nav-label::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+    .header__nav--mobile-footer {
+        position: absolute;
+        bottom: 0;
+    }
+    .header__nav--mobile-footer p {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+
+    /* home */
+    .box__img2 {
+        top: 2%;
+    }
+    .home__clip {
+        padding: 20px;
+    }
+    .header__nav {
+        display: none;
+    }
+    .heading {
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
+
+    /* skill */
+    .skills__left span {
+        height: 340px;
+    }
+   
+}
