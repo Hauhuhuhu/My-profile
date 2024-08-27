@@ -65,7 +65,7 @@
 .box__img {
     display: block;
     margin: auto;
-    background: #fff url(/assets/img/bird-Photoroom.png);
+    background: #fff url(../img/bird-Photoroom.png);
     height: 166.67px;
     width: 180px;
     padding: 50px;
@@ -126,7 +126,7 @@
     right: 0;
     width: 72px;
     height: 72px;
-    background: #fff url(/assets/img/sprites-icon.png);
+    background: #fff url(../img/sprites-icon.png);
     border-radius: 99px;
     animation: icon-sprites 120s infinite steps(1);
 }
