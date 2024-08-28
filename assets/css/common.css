@@ -1,10 +1,55 @@
 :root {
     --header-color: #191d1e;
+    --nav-color: #ffe4c4;
     --linear-color-1: #ffcb01;
     --linear-color-2: #ff5993;
     --blue-1: #0095FF;
     --blue-2: #45c9fd;
     --header-height: 60px;
+    --sub-heading-color: #C6C7CA;
+    --background-color-btn: #212121;
+    --footer-color: #1C1D1E;
+}
+html.light {
+    --header-color: #f6f7f9;
+    --heading-color: #45494f;
+    --sub-heading-color: #55585e;
+    --background-color-btn: #fff;
+    --nav-color: var(--blue-2);
+    --footer-color: #ecf0f9;
+    background-color:azure;
+    color: #45494f;
+}
+html.light .home-icon img,
+html.light .info-icon img,
+html.light .skill-icon img {
+    opacity: 0.6;
+    z-index: -1;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Sora", sans-serif;
+    overflow-x: hidden;
+    background-color: #000;
+    color: #fff;
+}
+* {
+    box-sizing: border-box;
+}
+/* light mode */
+.light--mode-icon {
+    cursor: pointer;
+    width: 40px;
+    padding: 6px;
+}
+.icon-dark {
+    color: #000;
+    filter: drop-shadow(0px 0px 10px #000);
+    display: none;
+}
+.icon-light {
+    color: #fbfbaa;
+    filter: drop-shadow(0px 0px 10px #fbfbaa);
 }
 /* Tùy chỉnh toàn bộ thanh cuộn */
 ::-webkit-scrollbar {
@@ -27,20 +72,6 @@
 ::-webkit-scrollbar-corner {
     background-color: transparent; /* Làm phần góc trong suốt */
 }
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #000;
-    color: #fff;
-}
-
-html {
-    font-size: 62.5%;
-    font-family: "Sora", sans-serif;
-    overflow-x: hidden;
-}
 .home,
 .info,
 .skills,
@@ -56,7 +87,7 @@ ul {
 a {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: var(--link-color);
 }
 
 .heading {
@@ -68,14 +99,14 @@ a {
     font-size: 2rem;
     line-height: 2.8rem;
     font-weight: 500;
-    color: #C6C7CA;
+    color: var(--sub-heading-color);
     margin: 20px 0;
 }
 .text {
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-weight: 300;
-    color: #9EA1A7;
+    color: var(--sub-heading-color);
 }
 .strong-blue {
     background: linear-gradient(90deg, var(--blue-1), var(--blue-2));
@@ -95,27 +126,26 @@ a {
     padding: 12px 20px;
     font-size: 1.6rem;
     font-weight: 600;
-    color: #fff;
     border-radius: 20px;
     border: 3px solid transparent;
-    background-color: #212121;
+    background-color: var(--background-color-btn);
     box-shadow: 0px 0px 10px rgba(255, 203, 1, 0.2), 0px 0px 10px rgba(255, 89, 147, 0.2);
     filter: drop-shadow(0px 0px 10px rgba(255, 89, 147, 0.2));
 }
 .btn,
 .btn-2:hover {
-    background: -o-linear-gradient(#212121, #212121) padding-box, -o-linear-gradient(308deg, var(--linear-color-1), var(--linear-color-2)) border-box;    
-    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(142deg, var(--linear-color-1), var(--linear-color-2)) border-box;
-}
-.btn-2:hover {
     color: var(--linear-color-2);
+    background: -o-linear-gradient(var(--background-color-btn), var(--background-color-btn)) padding-box, -o-linear-gradient(308deg, var(--linear-color-1), var(--linear-color-2)) border-box;    
+    background: linear-gradient(var(--background-color-btn), var(--background-color-btn)) padding-box, linear-gradient(142deg, var(--linear-color-1), var(--linear-color-2)) border-box;
 }
 .btn-2,
 .btn:hover {
+    color: #fff;
     background: -o-linear-gradient(308deg, var(--linear-color-1), var(--linear-color-2)) padding-box, -o-linear-gradient(308deg, var(--linear-color-1), var(--linear-color-2)) border-box;    
     background: linear-gradient(142deg, var(--linear-color-1), var(--linear-color-2)) padding-box, linear-gradient(142deg, var(--linear-color-1), var(--linear-color-2)) border-box;
 }
 .btn-blue {
+    color: #fff;
     box-shadow: 0px 0px 10px rgba(69, 201, 253, 0.3);
     filter: drop-shadow(0px 0px 10px rgba(69, 201, 253, 0.3));
     background: -o-linear-gradient(308deg, var(--blue-1), var(--blue-2)) padding-box, -o-linear-gradient(308deg, var(--blue-1), var(--blue-2)) border-box;    

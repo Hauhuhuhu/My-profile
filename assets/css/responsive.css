@@ -73,16 +73,20 @@
     .header__nav--mobile-list {
         display: flex;
         flex-direction: column;
+        padding-top: 20px;
         border-top: 2px solid #000;
+    }
+    .header__nav--mobile-list span {
+        padding: 12px;
     }
     .header__nav--link {
         display: block;
-        margin: 0;
+        padding: 0 16px;
         font-size: 2rem;
     }
     .header__nav--link label {
         display: block;
-        padding: 10px;
+        padding: 16px 0px;
     }
     .nav-label::before {
         content: "";
