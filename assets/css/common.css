@@ -37,19 +37,38 @@ html {
     box-sizing: border-box;
 }
 /* light mode */
+.light--mode {
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+}
 .light--mode-icon {
-    cursor: pointer;
     width: 40px;
     padding: 6px;
+    cursor: pointer;
 }
 .icon-dark {
+    position: absolute;
     color: #000;
     filter: drop-shadow(0px 0px 10px #000);
-    display: none;
+    -webkit-tap-highlight-color: transparent; /* Dành cho trình duyệt WebKit (Chrome, Safari, Android) */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    transition: all ease-in 1s;
 }
 .icon-light {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-tap-highlight-color: transparent; /* Dành cho trình duyệt WebKit (Chrome, Safari, Android) */
     color: #fbfbaa;
     filter: drop-shadow(0px 0px 10px #fbfbaa);
+    transition: all ease-in 1s;
 }
 /* Tùy chỉnh toàn bộ thanh cuộn */
 ::-webkit-scrollbar {
@@ -109,13 +128,19 @@ a {
     color: var(--sub-heading-color);
 }
 .strong-blue {
+    background: -webkit-gradient(linear, left top, right top, from(var(--blue-1)), to(var(--blue-2)));
+    background: -o-linear-gradient(left, var(--blue-1), var(--blue-2));
     background: linear-gradient(90deg, var(--blue-1), var(--blue-2));
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
 }
 .strong-primary {
+    background: -webkit-gradient(linear, left top, right top, from(var(--linear-color-1)), to(var(--linear-color-2)));
+    background: -o-linear-gradient(left, var(--linear-color-1), var(--linear-color-2));
     background: linear-gradient(90deg, var(--linear-color-1), var(--linear-color-2));
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
 }
 

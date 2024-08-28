@@ -73,9 +73,11 @@ lightMode.forEach(function(lightElem) {
     lightElem.addEventListener('click', function() {
         htmlWeb.classList.add('light');
         darkMode.forEach(function(darkElem) {
-            darkElem.style.display = 'block'; 
+            darkElem.style.transform = 'translate(-50%, -50%)';
+            darkElem.style.opacity = '1';
         });
-        lightElem.style.display = 'none';
+        lightElem.style.transform = 'translate(-50%, 100%)';
+        lightElem.style.opacity = '0';
     });
 });
 
@@ -83,8 +85,10 @@ darkMode.forEach(function(darkElem) {
     darkElem.addEventListener('click', function() {
         htmlWeb.classList.remove('light');
         lightMode.forEach(function(lightElem) {
-            lightElem.style.display = 'block';
+            lightElem.style.transform = 'translate(-50%, -50%)';
+            lightElem.style.opacity = '1';
         });
-        darkElem.style.display = 'none';
+        darkElem.style.transform = 'translate(-50%, -200%)';
+        darkElem.style.opacity = '0';
     });
 });
