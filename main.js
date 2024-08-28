@@ -51,19 +51,19 @@ checkScreenSize();  // Kiểm tra ngay khi trang được tải
 window.addEventListener('resize', checkScreenSize); // Kiểm tra mỗi khi cửa sổ được thay đổi kích thước
 
 // Chặn Kiểm tra trình duyệt
-// document.addEventListener('contextmenu', function(event) { // Click chuột phải
-//     event.preventDefault();     
-// });
-// window.addEventListener('keydown', function(event) {
-//     if (event.keyCode === 123 ||
-//         event.keyCode === 85 ||
-//         event.keyCode === 73 ||
-//         event.keyCode === 74 ||
-//         event.keyCode === 67) 
-//     { // F12 U I J C
-//         event.preventDefault();
-//     }
-// });
+document.addEventListener('contextmenu', function(event) { // Click chuột phải
+    event.preventDefault();     
+});
+window.addEventListener('keydown', function(event) {
+    if (event.keyCode === 123 ||
+        event.keyCode === 85 ||
+        event.keyCode === 73 ||
+        event.keyCode === 74 ||
+        event.keyCode === 67) 
+    { // F12 U I J C
+        event.preventDefault();
+    }
+});
 
 // Light Mode 
 const lightMode = document.querySelectorAll('.icon-light');
