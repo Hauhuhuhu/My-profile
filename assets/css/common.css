@@ -274,11 +274,12 @@ a {
 .onTop {
     position: sticky;
     top: 80%;
-    display: flex;
-    justify-content: end;
-    margin-top: 100px;
-    margin-right: -80px;
+    float: right;
+    margin-top: 100vh;
+    margin-right: 20px;
+    z-index: 1;
 }
+
 .onTop a {
     display: flex;
     align-items: center;
